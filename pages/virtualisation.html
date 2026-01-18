@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtualisation - SAÉ S1.03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">SAÉ S1.03</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="virtualisation.html">Virtualisation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dossier-etude.html">Dossier d'étude</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="display-4 mb-4">Virtualisation</h1>
+                
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="h4 mb-0">Définition de la virtualisation</h2>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <em>La virtualisation est une technologie que vous pouvez utiliser pour créer des représentations virtuelles de serveurs, de stockage, de réseaux et d'autres machines physiques. Le logiciel virtuel imite les fonctions du matériel physique pour exécuter plusieurs machines virtuelles sur une seule machine physique. Les entreprises ont recours à la virtualisation pour utiliser efficacement leurs ressources matérielles et obtenir un meilleur rendement de leurs investissements. Elle alimente également les services de cloud computing qui aident les organisations à gérer leur infrastructure plus efficacement.</em>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h2 class="h4 mb-0">Différences entre les outils</h2>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h5 mt-3">Émulateur</h3>
+                        <p class="card-text">
+                            <em>Un émulateur est un logiciel qui reproduit entièrement le fonctionnement d’un autre système, y compris son matériel. Il permet par exemple d’exécuter un système ou un programme prévu pour une autre architecture que celle de l’ordinateur utilisé.</em>
+                        </p>
+
+                        <h3 class="h5 mt-4">Simulateur</h3>
+                        <p class="card-text">
+                            <em>Un simulateur est un outil qui imite le comportement d’un système sans en reproduire exactement le fonctionnement réel. Il sert principalement à tester ou à observer des situations, sans chercher à exécuter réellement le système comme sur une vraie machine.</em>
+                        </p>
+
+                        <h3 class="h5 mt-4">Outil de virtualisation</h3>
+                        <p class="card-text">
+                            <em>Un outil de virtualisation permet de créer et d'exécuter des machines virtuelles sur un ordinateur physique. Ces machines utilisent le matériel réel de l'ordinateur hôte et fonctionnent comme de vrais systèmes, tout en restant isolées les unes des autres.</em>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-info text-white">
+                        <h2 class="h4 mb-0">Types de virtualisation</h2>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h5 mt-3">VirtualBox</h3>
+                        <p class="card-text">
+                            <em>VirtualBox utilise une virtualisation de type 2.
+                                Le logiciel de virtualisation est installé comme une application classique.
+                                Il permet de créer et exécuter plusieurs machines virtuelles sur un même ordinateur physique.
+                                Ce type de virtualisation est surtout utilisé pour l’apprentissage, les tests et le développement.</em>
+                        </p>
+
+                        <h3 class="h5 mt-4">VMware Workstation</h3>
+                        <p class="card-text">
+                            <em>VMware Workstation utilise également une virtualisation de type 2.
+                                Comme VirtualBox, il dépend d’un système d’exploitation hôte.
+                                Il offre généralement de meilleures performances et plus de fonctionnalités avancées, comme la gestion réseau ou les snapshots.
+                                Il est très utilisé par les professionnels, développeurs et administrateurs systèmes pour tester des environnements.</em>
+                        </p>
+
+                        <h3 class="h5 mt-4">Stratus</h3>
+                        <p class="card-text">
+                            <em>Stratus utilise une virtualisation de type 1 (bare metal).
+                                L’hyperviseur est installé directement sur le matériel, sans système d’exploitation intermédiaire.
+                                Ce type de virtualisation offre une meilleure performance, une haute disponibilité et une forte tolérance aux pannes.
+                                Stratus est principalement utilisé dans des environnements critiques (banques, industries, hôpitaux) où l’arrêt des systèmes est inacceptable.</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">SAÉ S1.03 – Gaspard Roffet - Sidy Dembele – Semestre 1</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

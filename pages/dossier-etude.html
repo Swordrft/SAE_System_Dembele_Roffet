@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier d'étude - SAÉ S1.03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">SAÉ S1.03</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="virtualisation.html">Virtualisation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dossier-etude.html">Dossier d'étude</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="display-4 mb-4">Dossier d'étude</h1>
+                
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h2 class="h4 mb-0">Introduction</h2>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <em>Ce projet consiste à créer et installer une machine virtuelle, puis à y configurer un serveur web Apache afin d’héberger un site internet. La machine virtuelle permet de disposer d’un environnement isolé pour l’installation et la configuration du système et des services nécessaires.
+
+                                Un site de documentation a également été réalisé afin de retracer les différentes étapes du projet. Celui-ci présente le parcours de création de la machine virtuelle et de l’hébergement du site à l’aide de captures d’écran, facilitant la compréhension et la reproduction des manipulations effectuées.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h2 class="h4 mb-0">Création d'une machine et hébergement d'un site web via Apache</h2>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="h5 mt-3">Étape 1 : Téléchargement et extraction de l'image Debian</h3>
+                        <p class="card-text">
+                            <em>Pour l’installation du système, nous avons téléchargé une image Debian 12 depuis le site linuxvmimages.com, qui propose des images prêtes à l’emploi pour la virtualisation. Le fichier étant compressé, nous l’avons extrait à l’aide du logiciel 7-Zip afin d’obtenir le fichier utilisable par la machine virtuelle. Debian a été choisie pour sa stabilité, sa sécurité et son utilisation fréquente dans les environnements serveurs.
+                        </p>
+                        <div class="mb-3 text-center">
+                            <img src="../images/captures/etape1.PNG" alt="Étape 1 - Téléchargement Debian" class="img-fluid rounded">
+                        </div>
+
+                        <h3 class="h5 mt-4">Étape 2 : Installation de VirtualBox</h3>
+                        <p class="card-text">
+                            <em>Nous avons ensuite téléchargé VirtualBox depuis le site officiel virtualbox.org. Ce logiciel a été retenu car il est gratuit, facile à utiliser et compatible avec de nombreux systèmes d’exploitation, dont Debian. Il constitue une solution idéale pour créer et gérer des machines virtuelles dans un cadre pédagogique.
+                        </p>
+                        <div class="mb-3 text-center">
+                            <img src="../images/captures/etape2.PNG" alt="Étape 2 - Installation VirtualBox" class="img-fluid rounded">
+                        </div>
+
+                        <h3 class="h5 mt-4">Étape 3 : Ouverture de la machine virtuelle dans VirtualBox</h3>
+                        <p class="card-text">
+                            <em>Nous avons ouvert la machine virtuelle dans VirtualBox en cliquant sur le bouton « Nouvelle ». Nous avons ensuite choisi le type de machine virtuelle « Linux » et l'image Debian 12   . Nous avons ensuite cliqué sur « Suivant » et « Terminer » pour créer la machine virtuelle.</em>
+                        </p>
+                        <div class="mb-3 text-center">
+                            <img src="../images/captures/etape3.png" alt="Étape 3 - Ouverture VM" class="img-fluid rounded">
+                        </div>
+
+                        <h3 class="h5 mt-4">Étape 4 : Configuration de la machine virtuelle</h3>
+                        <p class="card-text">
+                            <em>Ensuite nous avons verifié que la machine virtuelle était bien configurée en allant dans les paramètres de la machine virtuelle et en vérifiant que le système d'exploitation était bien Debian 12. Et avons ensuite lancé la machine virtuelle.</em>
+                        </p>
+                        <div class="mb-3 text-center">
+                            <img src="../images/captures/etape4.png" alt="Étape 4 - Configuration VM" class="img-fluid rounded">
+                        </div>
+
+                        <h3 class="h5 mt-4">Étape 5 : Premier démarrage de Debian</h3>
+                        <p class="card-text">
+                            <em>Apres avoir lancé la machine virtuelle, nous avons vu l'écran de connexion de Debian. Nous avons ensuite entré le mot de passe « debian » pour accéder à la machine virtuelle.</em>
+                        </p>
+                        <div class="mb-3 text-center">
+                            <img src="../images/captures/etape5.png" alt="Étape 5 - Premier démarrage" class="img-fluid rounded">
+                        </div>
+
+                        <h3 class="h5 mt-4">Étape 6 : Écran d'accueil Debian</h3>
+                        <p class="card-text">
+                            <em>Apres avoir entré le mots de passes, nous somme arrivé sr l'ecran de configuration de la machine ou nosu avons choisi la langue"englaisé et le clavier "français azerti" et nousavons ensuite cliqué sur "continuer".</em>
+                        </p>
+                        <div class="mb-3 text-center">
+                            <img src="../images/captures/etape6.png" alt="Étape 6 - Écran d'accueil" class="img-fluid rounded">
+                        </div>
+
+                        <h3 class="h5 mt-4">Étape 7 : Installation d'Apache2</h3>
+                        <p class="card-text">
+                            <em>Via la commande "sudo apt-get install apache2" nous avons installé le serveur web Apache2.</em>
+                        </p>
+                        <div class="mb-3 text-center">
+                            <img src="../images/captures/etape7.png" alt="Étape 7 - Installation Apache2" class="img-fluid rounded">
+                        </div>
+
+                        <h3 class="h5 mt-4">Étape 8 : Configuration des dossiers partagés</h3>
+                        <p class="card-text">
+                            <em>Ensuite nous avons configuré les dossiers partagés en allant dans les paramètres de la machine virtuelle "peripheriques", "dossier partagés" et ensuite nous avons choissi le dossier reliant la machine avec l'ordinateur ici "vm dossier partagé".</em>
+                        </p>
+                        <div class="mb-3 text-center">
+                            <img src="../images/captures/etape8.png" alt="Étape 8 - Dossiers partagés" class="img-fluid rounded">
+                        </div>
+
+                        <h3 class="h5 mt-4">Étape 9 : Importation du site sur l'hébergement Apache</h3>
+                        <p class="card-text">
+                            <em>Voici les commandes pour importer le site sur l'hébergement Apache.</em>
+                        </p>
+                        <div class="mb-3 text-center">
+                            <img src="../images/captures/etape9.png" alt="Étape 9 - Importation du site" class="img-fluid rounded">
+                        </div>
+
+                        <h3 class="h5 mt-4">Étape 10 : Droit d'accès au site</h3>
+                        <p class="card-text">
+                            <em>Voici les commandes pour donner les droits d'accès au site.</em>
+                        </p>
+                        <div class="mb-3 text-center">
+                            <img src="../images/captures/etape10.png" alt="Étape 10 - Droit d'accès au site" class="img-fluid rounded">
+                        </div>
+
+                        <h3 class="h5 mt-4">Étape 11 : Image du site</h3>
+                        <p class="card-text">
+                            <em>Ensuite voici une image du site web hébergé sur la machine virtuelle via apache2.</em>
+                        </p>
+                        <div class="mb-3 text-center">
+                            <img src="../images/captures/etape11.png" alt="Étape 11 - Image du site" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-info text-white">
+                        <h2 class="h4 mb-0">Création du site</h2>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <em>Le site web a été créé afin de présenter et documenter l’ensemble du projet. Il a été réalisé en HTML, avec une mise en forme exclusivement assurée par Bootstrap, permettant d’obtenir un design clair, responsive et cohérent sans utiliser de CSS personnalisé.
+
+                                Le choix de limiter le site à trois pages permet une navigation simple et efficace. La page Accueil présente le contexte du projet ainsi que le diagramme de Gantt, offrant une vue globale de l’organisation et des objectifs. La page Virtualisation explique les différents types de virtualisation utilisés dans une machine virtuelle, afin d’apporter les bases théoriques nécessaires. Enfin, la page Dossier d’étude regroupe l’ensemble des tâches réalisées, illustrées par des captures d’écran, afin de documenter clairement chaque étape du projet.</em>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header bg-warning text-dark">
+                        <h2 class="h4 mb-0">Conclusion du dossier</h2>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <em>La réalisation de ce projet nous a permis de mettre en pratique la création et la configuration d’une machine virtuelle ainsi que l’hébergement d’un site web via Apache. Le choix de VirtualBox s’est imposé grâce à sa gratuité, sa simplicité d’utilisation et sa compatibilité avec de nombreux systèmes d’exploitation, ce qui en fait un outil idéal pour l’apprentissage et les environnements de test.
+
+                                L’utilisation d’une image Debian a été retenue pour sa stabilité, sa fiabilité et sa légèreté. Debian est une distribution largement utilisée dans le monde des serveurs, offrant une grande sécurité et une gestion efficace des paquets, ce qui la rend particulièrement adaptée à l’hébergement de services web.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">SAÉ S1.03 – Gaspard Roffet - Sidy Dembele  – Semestre 1</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
